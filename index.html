@@ -43,6 +43,15 @@
 				font-weight: 500;
 			}
 		</style>
+		<script type="text/javascript">
+			function toggle_visibility(id) {
+				var e = document.getElementById(id);
+				if(e.style.display == 'block')
+					e.style.display = 'none';
+				else
+					e.style.display = 'block';
+				}	
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -95,16 +104,18 @@
 						<div class="content">
 							<h2 id="demo">Explore Our Demo</h2>
 							<p>View a short video that demonstrates the <b>Take On Transplant</b> tool. See how to register, take the initial My CF Stage survey, and view recommended content. Learn about the features of <b>Take On Transplant</b>.</p>
-							<ul class="actions stacked">
+							<!--<ul class="actions stacked">
 								<li><a href="#" class="button disabled">Coming Soon</a></li>
-							</ul>
+							</ul>-->
+							<a onclick="toggle_visibility('video');" class="button">Watch Video</a>
+
 						</div>
 						<div class="image">
 							<img src="images/Header.png" alt="" />
 						</div>
 					</section>
 				
-					<section class="wrapper style1 align-center" style="background: #faf7fd;">
+					<section class="wrapper style1 align-center" style="background: #faf7fd;" id="video">
 						<div class="inner">
 							<iframe class='sproutvideo-player' src='//videos.sproutvideo.com/embed/709adfb61e1ce3c2f8/3b66823cd23e960d' width='100%' frameboarder='0' allowfullscreen></iframe>
 						</div>
