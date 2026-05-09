@@ -585,3 +585,24 @@
 	};
 
 })(jQuery);
+
+function domReady(fn) {
+  if (
+    document.readyState === "interactive" ||
+    document.readyState === "complete"
+  ) {
+    fn();
+  } else {
+    document.addEventListener(
+      "DOMContentLoaded",
+      fn
+    );
+  }
+}
+
+function toggle_visibility(id) {
+  var e = document.getElementById(id);
+  if (!e) return;
+  if (e.style.display == "block") e.style.display = "none";
+  else e.style.display = "block";
+}
