@@ -3,7 +3,7 @@
 ## To test/view site locally
 
 1. Install Python 3
-2. Run python3 -m http.server 8000
+2. Run python3 -m http.server 8000 at the root directory
 3. Go to http://localhost:8000/ 
 
 
