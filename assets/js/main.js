@@ -297,15 +297,28 @@
     });
 })(jQuery);
 
-
-function showVideo(e) {
-  e.preventDefault();
-  e.stopPropagation();
-  const section = document.querySelector("#video");
+function hideVideo() {
+  const demoSection = document.querySelector("#videoDemoSection");
+  const section = document.querySelector("#videoSection");
   const container = document.querySelector(".video-container");
+  demoSection.classList.add("is-hidden")
+  section.classList.add("is-hidden");
+  container.innerHTML = "";
+}
 
+function showVideo(e, isInitialLoad = false) {
+  if (e) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+  const demoSection = document.querySelector("#videoDemoSection");
+  if (isInitialLoad) {
+    demoSection.classList.remove("is-hidden")
+    return;
+  }
+  const section = document.querySelector("#videoSection");
+  const container = document.querySelector(".video-container");
   section.classList.remove("is-hidden");
-
   if (!container.querySelector("iframe")) {
     container.innerHTML = `
         <iframe
@@ -317,6 +330,9 @@ function showVideo(e) {
         ></iframe>
       `;
   }
+  setTimeout(() => {
+    container.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, 300);
 }
 
 domReady(() => {

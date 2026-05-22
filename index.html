@@ -144,6 +144,7 @@
       <section
         class="spotlight style5 orient-left content-align-left image-position-center invert onscroll-image-fade-in"
         style="background: #502b91"
+        id="videoDemoSection"
       >
         <div class="content">
           <h2 id="demo" data-i18n="exploreDemoTitle">Explore Our Demo</h2>
@@ -155,7 +156,7 @@
           </p>
 
           <a
-            onclick="showVideo(event)"
+            onclick="showVideo(event, false)"
             href="#video"
             class="button smooth-scroll-middle"
           >
@@ -168,7 +169,7 @@
         </div>
       </section>
 
-      <section class="wrapper style1 align-center is-hidden" id="video">
+      <section class="wrapper style1 align-center is-hidden" id="videoSection">
         <div class="inner video-wrapper">
           <div class="video-container"></div>
         </div>

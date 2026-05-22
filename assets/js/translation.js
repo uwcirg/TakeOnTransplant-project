@@ -97,18 +97,25 @@ function getSavedLanguage() {
   return localStorage.getItem("siteLanguage") || "en";
 }
 
+function handleVideoVisibility(lang, isInitialLoad = true) {
+  if (lang !== "en") {
+    hideVideo();
+    return;
+  }
+  showVideo(null, isInitialLoad);
+
+}
+
 function initializeLanguageSwitcher() {
   const switcher =
     document.getElementById("languageSwitcher");
-
   if (!switcher) return;
-
   const savedLanguage = getSavedLanguage();
-
   switcher.value = savedLanguage;
-
   switcher.addEventListener("change", (e) => {
     setLanguage(e.target.value);
+    console.log("Selected language:", e.target.value);
+    handleVideoVisibility(e.target.value, true);
   });
 }
 
@@ -117,4 +124,5 @@ domReady(async () => {
   initializeLanguageSwitcher();
   const savedLanguage = getSavedLanguage();
   setLanguage(savedLanguage);
+  handleVideoVisibility(savedLanguage);
 });
