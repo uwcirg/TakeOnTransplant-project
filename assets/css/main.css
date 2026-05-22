@@ -2637,7 +2637,7 @@ button,
   text-transform: uppercase;
   white-space: nowrap;
   font-size: 0.75rem;
-  max-width: 20rem;
+  max-width: 26rem;
   height: 4.25em;
   line-height: 3.75em;
   border-radius: 3.75em;
@@ -3034,8 +3034,8 @@ input[type="search"]:focus,
 input[type="url"]:focus,
 select:focus,
 textarea:focus {
-  border-color: #47d3e5;
-  box-shadow: 0 0 0 1px #47d3e5;
+  border-color: var(--button-hover-color);
+  box-shadow: 0 0 0 1px var(--button-hover-color);
 }
 
 select {
@@ -9108,8 +9108,8 @@ body.is-preload .items.onload-fade-in > * > .inner {
 #wrapper > .invert input[type="url"]:focus,
 #wrapper > .invert select:focus,
 #wrapper > .invert textarea:focus {
-  border-color: #47d3e5;
-  box-shadow: 0 0 0 1px #47d3e5;
+  border-color: var(--button-hover-color);
+  box-shadow: 0 0 0 1px var(--button-hover-color);
 }
 
 #wrapper > .invert select {
