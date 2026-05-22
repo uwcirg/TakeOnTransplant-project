@@ -699,6 +699,14 @@ h6 {
 .video-wrapper {
   padding: 0;
   max-width: 100%;
+  position: relative;
+}
+.video-close-container {
+  position: absolute;
+  top: 16px;
+  right: 60px;
+  z-index: 10;
+
 }
 
 .video-container {
@@ -2676,6 +2684,17 @@ button.large,
   line-height: 4em;
   border-radius: 4em;
   padding: 0 3em;
+}
+
+button.plain {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  border-radius: 0;
+  border: 0;
 }
 
 input[type="submit"].wide,

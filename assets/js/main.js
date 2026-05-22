@@ -299,9 +299,13 @@
 
 function hideVideo() {
   const demoSection = document.querySelector("#videoDemoSection");
+  demoSection.classList.add("is-hidden")
+  killVideo();
+}
+
+function killVideo() {
   const section = document.querySelector("#videoSection");
   const container = document.querySelector(".video-container");
-  demoSection.classList.add("is-hidden")
   section.classList.add("is-hidden");
   container.innerHTML = "";
 }
