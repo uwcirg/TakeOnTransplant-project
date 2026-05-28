@@ -58,6 +58,10 @@
 .fade-bg {
   opacity: 0.5;
 }
+.degree {
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
 .features-container {
   display: flex;
   flex-wrap: wrap;
