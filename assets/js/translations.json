@@ -1,6 +1,7 @@
 {
   "en": {
     "languageSwitcherLabel": "Select language",
+    "startHere": "Start Here",
     "heroDescription1": "A resource for people living with cystic fibrosis (CF), their families, and caregivers to learn about lung transplant through educational resources, shared experiences, and up-to-date medical information.",
     "heroDescription2": "Take on Transplant™ was created to help people with CF feel more informed and prepared as they consider lung transplant and discuss treatment options with their care teams.",
     "learnMore": "Learn More About the Project",
@@ -52,6 +53,7 @@
   },
   "es": {
     "languageSwitcherLabel": "Seleccionar idioma",
+    "startHere": "Comience aquí",
     "heroDescription1": "Un recurso para personas que viven con fibrosis quística (FQ), sus familias y cuidadores, diseñado para aprender sobre el trasplante de pulmón a través de recursos educativos, experiencias compartidas e información médica actualizada.",
     "heroDescription2": "Take on Transplant™ fue creado para ayudar a las personas con FQ a sentirse más informadas y preparadas al considerar el trasplante de pulmón y conversar sobre las opciones de tratamiento con sus equipos de atención médica.",
     "learnMore": "Obtenga más información sobre el proyecto",
