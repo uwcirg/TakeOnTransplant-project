@@ -1,0 +1,102 @@
+// =========================================================
+// Content and overlay spotlight sections
+// =========================================================
+
+.spotlight.style1 {
+  position: relative;
+
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  overflow-x: hidden;
+
+  text-align: left;
+}
+
+.spotlight.style1.orient-right {
+  flex-direction: row-reverse;
+}
+
+.spotlight.style1 .content {
+  align-self: center;
+
+  flex: 1 1 auto;
+
+  width: 65%;
+  max-width: 64rem;
+
+  margin: 0 auto;
+  padding: 7rem 7rem 5rem;
+}
+
+.spotlight.style1 .image {
+  flex: 0 0 auto;
+
+  width: 35%;
+  min-width: 25rem;
+
+  border-radius: 0;
+}
+
+.spotlight.style5 {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5rem 5.25rem;
+
+  overflow-x: hidden;
+
+  background-color: inherit;
+
+  text-align: center;
+}
+
+.spotlight.style5.orient-left {
+  justify-content: flex-start;
+}
+
+.spotlight.style5.orient-right {
+  justify-content: flex-end;
+}
+
+.spotlight.style5 .content {
+  position: relative;
+  z-index: 1;
+
+  width: 40rem;
+  max-width: 52.5%;
+
+  padding: 3.5rem;
+
+  border-radius: 0.5rem;
+
+  background-color: inherit;
+}
+
+.spotlight.style5 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 0;
+}
+
+.spotlight.style5.image-position-left .image img {
+  object-position: left;
+}
+
+.fade-bg {
+  opacity: 0.4;
+}
+
+.content .content-description {
+  margin-bottom: 1.75rem !important;
+}

@@ -1,0 +1,24 @@
+// =========================================================
+// Theme tokens
+// =========================================================
+
+$bp-wide: 1680px;
+$bp-large: 1280px;
+$bp-medium: 980px;
+$bp-small: 736px;
+$bp-xsmall: 480px;
+$bp-xxsmall: 360px;
+$bp-footer-grid: 768px;
+
+:root {
+  --primary-color: #502b91;
+  --button-hover-color: #331163;
+  --button-border-color: #c7b4da;
+  --alt-background-color: #f3eefa;
+  --page-background-color: #faf7fd;
+  --header-background-color: #88868b26;
+
+  --feature-story-color: #57c9c9;
+  --feature-resource-color: #b292c8;
+  --feature-faq-color: #e5b92e;
+}

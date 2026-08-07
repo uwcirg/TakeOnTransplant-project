@@ -1,0 +1,146 @@
+// =========================================================
+// Reset, base typography, links
+// =========================================================
+
+html {
+  box-sizing: border-box;
+  font-size: 18pt;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+div,
+header,
+footer,
+section,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+a,
+span,
+i,
+sup,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #fff;
+  color: #000;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.65;
+  -webkit-text-size-adjust: none;
+}
+
+body.is-preload *,
+body.is-preload *::before,
+body.is-preload *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 1.25rem;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.05em;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+p.major {
+  font-size: 1.2rem;
+}
+
+h3.narrow-gap {
+  margin-bottom: 1rem;
+}
+
+h4.half-gap {
+  margin-bottom: 0.5rem;
+}
+
+i {
+  font-style: italic;
+}
+
+sup {
+  position: relative;
+  top: -0.75rem;
+  left: 4px;
+  margin-right: 8px;
+  font-size: 0.85rem;
+}
+
+hr {
+  margin: 2rem 0;
+  border: 0;
+  border-bottom: 1px solid rgb(239 231 231 / 20%);
+}
+
+hr.dark {
+  border-bottom-color: #89838333;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #47d3e5;
+  text-decoration: none;
+}

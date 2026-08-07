@@ -1,0 +1,58 @@
+// =========================================================
+// Feature cards and SVG icons
+// =========================================================
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 1.5rem;
+
+  margin-top: 1.75rem;
+}
+
+.features-container .feature {
+  flex: 1;
+  max-width: calc(33.333% - 1.5rem);
+}
+
+.features-container .feature-title {
+  display: flex;
+  align-items: center;
+
+  gap: 0.75rem;
+
+  margin-bottom: 1rem !important;
+}
+
+.features-container .feature-title h3 {
+  margin: 0 !important;
+}
+
+.feature-icon {
+  flex: 0 0 auto;
+
+  width: 1.5rem;
+  height: 1.5rem;
+
+  fill: none;
+
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.story {
+  color: var(--feature-story-color);
+  border: 1px solid var(--feature-story-color);
+  border-radius: 100%;
+}
+
+.resource {
+  color: var(--feature-resource-color);
+}
+
+.faq {
+  color: var(--feature-faq-color);
+}

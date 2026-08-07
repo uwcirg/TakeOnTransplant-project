@@ -1,0 +1,88 @@
+// =========================================================
+// General page layout
+// =========================================================
+
+#wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: inherit;
+}
+
+#wrapper.divided > * {
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.075);
+}
+
+#wrapper.divided > :first-child {
+  box-shadow: none !important;
+}
+
+#wrapper.divided > .invert {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.125);
+}
+
+#wrapper > .invert {
+  color: #fff;
+  background-color: #000;
+}
+
+#wrapper > .invert a,
+#wrapper > .invert h2 {
+  color: #fff;
+}
+
+#wrapper > .invert a:hover {
+  color: #47d3e5;
+}
+
+.default-background {
+  background-color: var(--page-background-color) !important;
+}
+
+.default-background.lighten {
+  background-color: #faf7fde6 !important;
+}
+
+.default-color {
+  color: #000 !important;
+}
+
+.bg-alt {
+  background-color: var(--alt-background-color) !important;
+}
+
+.align-left,
+.content-align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.image {
+  position: relative;
+  display: inline-block;
+  border: 0;
+  border-radius: 4px;
+}
+
+.image img {
+  display: block;
+  border-radius: 4px;
+}
+
+.image.fit {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
+}
+
+.banner .image,
+.spotlight .image {
+  background-color: rgba(0, 0, 0, 0.125);
+}
+
+.spotlight.invert .image {
+  background-color: rgba(255, 255, 255, 0.125);
+}
