@@ -1,236 +1,515 @@
-<!DOCTYPE HTML>
+<!doctype html>
 
-<html>
-	<head>
-		<title>Take on Transplant</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<script src="https://kit.fontawesome.com/0fbfe3d2f7.js" crossorigin="anonymous"></script>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			.resource {
-			    color: #b292c8;
-			}
-			.faq {
-			    color: #efc542;
-			}
-			.story {
-			    color: #96cfcf;
-			}
-			
-			.clip-spacer {
-			    clip-path: polygon(100% 0%, 0% 0%, 0% 65%, 1% 64.95%, 2% 64.8%, 3% 64.59999999999999%, 4% 64.3%, 5% 63.9%, 6% 63.45%, 7% 62.9%, 8% 62.25%, 9% 61.55%, 10% 60.8%, 11% 59.95%, 12% 59.05%, 13% 58.1%, 14% 57.1%, 15% 56.05%, 16% 55%, 17% 53.9%, 18% 52.8%, 19% 51.65%, 20% 50.5%, 21% 49.35%, 22% 48.2%, 23% 47.05%, 24% 45.9%, 25% 44.8%, 26% 43.75%, 27% 42.75%, 28% 41.75%, 29% 40.8%, 30% 39.9%, 31% 39.1%, 32% 38.35%, 33% 37.65%, 34% 37.05%, 35% 36.5%, 36% 36.05%, 37% 35.65%, 38% 35.35%, 39% 35.15%, 40% 35.05%, 41% 35%, 42% 35.05%, 43% 35.2%, 44% 35.45%, 45% 35.75%, 46% 36.15%, 47% 36.65%, 48% 37.2%, 49% 37.85%, 50% 38.55%, 51% 39.35%, 52% 40.2%, 53% 41.1%, 54% 42.05%, 55% 43.05%, 56% 44.1%, 57% 45.15%, 58% 46.3%, 59% 47.4%, 60% 48.55%, 61% 49.7%, 62% 50.85%, 63% 52%, 64% 53.15%, 65% 54.25%, 66% 55.35%, 67% 56.4%, 68% 57.45%, 69% 58.4%, 70% 59.35%, 71% 60.2%, 72% 61.05%, 73% 61.8%, 74% 62.45%, 75% 63.05%, 76% 63.6%, 77% 64.05%, 78% 64.40000000000001%, 79% 64.7%, 80% 64.84999999999999%, 81% 65%, 82% 65%, 83% 64.90000000000001%, 84% 64.75%, 85% 64.5%, 86% 64.2%, 87% 63.75%, 88% 63.25%, 89% 62.7%, 90% 62.05%, 91% 61.3%, 92% 60.5%, 93% 59.65%, 94% 58.75%, 95% 57.8%, 96% 56.8%, 97% 55.75%, 98% 54.65%, 99% 53.55%, 100% 52.4%);
-			    background: #f3eefa;
-			    min-height: 48px;
-			    margin-top: -48px;
-			    transform: rotate(180deg);
-			    position: relative;
-			    top: 120px;
-			}
-			h1 {
-				font-weight: 900;
-			}
-			h2 {
-				font-weight: 500;
-			}
-			h3 {
-				font-weight: 500;
-			}
-		</style>
-		<script type="text/javascript">
-			function toggle_visibility(id) {
-				var e = document.getElementById(id);
-				if(e.style.display == 'block')
-					e.style.display = 'none';
-				else
-					e.style.display = 'block';
-				}	
-		</script>
-	</head>
-	<body class="is-preload">
+<html lang="en">
+  <head>
+    <title>Take on Transplant</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="assets/css/main.css?08-07-26%2015%3A47%3A34%20"
+    />
+  </head>
+  <noscript><p class="noscript">Your browser does not support JavaScript!</p></noscript>
+  <body class="is-preload">
+    <header>
+      <div>
+        <select
+          id="languageSwitcher"
+          aria-label="Select language"
+          data-i18n-attr="aria-label:languageSwitcherLabel"
+        >
+          <option value="en">English</option>
+          <option value="es">Español</option>
+        </select>
+      </div>
+    </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
+      <!-- One -->
+      <section
+        class="banner style2 orient-left content-align-left fullscreen  bg-alt"
+      >
+        <div class="content wide default-background lighten">
+          <h1 class="hero-logo-container">
+            <img
+              src="images/Take_on_Transplant_01_cropped.png"
+              alt="Take on Transplant"
+              class="hero-logo"
+            />
+          </h1>
+          <p class="major" data-i18n="heroDescription1">
+            A resource for people living with cystic fibrosis (CF), their
+            families, and caregivers to learn about lung transplant through
+            educational resources, shared experiences, and up-to-date medical
+            information.
+          </p>
+          <p class="major" data-i18n="heroDescription2">
+            Take on Transplant™ was created to help people with CF feel more
+            informed and prepared as they consider lung transplant and discuss
+            treatment options with their care teams.
+          </p>
 
-				<!-- One -->
-					<section class="banner style2 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" style="background: #f3eefa;">
-						<div class="content">
-							<h1>
-								<img src="images/Take_on_Transplant_01_cropped.png" style="height: 2em; width; 1em;" alt="Take on Transplant"/>
-								<!--<b style="color: #502b91;">Take on Transplant&#x2122;</b>-->
-							</h1>
-							<p class="major">A resource for people living with cystic fibrosis and their loved ones to explore individual’s experiences and up-to-date information about lung transplant.</p>
-							<!--Explore stories from people living with cystic fibrosis (CF) as they share their experiences with lung transplant.-->
-							<!--Empowering and preparing individuals with cystic fibrosis for conversations and decisions surrounding lung transplant.-->
-							<ul class="actions stacked">
-								<!--<li><a href="https://demo.takeontransplant.org/users/login" target="_blank" class="button big wide smooth-scroll-middle">Try the Demo Site  <i class="fa fa-caret-right"></i> </a></li>
-								-->
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Learn More About the Project  <i class="fa fa-caret-down"></i> </a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/Logo Background.png" alt="" />
-						</div>
-					</section>
+          <ul class="actions stacked">
+            <li class="hero-buttons-container">
+              <a href="https://clone-dhair2-dev.cirg.washington.edu/" class="button big wide primary">
+                <span data-i18n="startHere">Start Here</span>
+              </a>
+              <a href="#first" class="button big wide">
+                <span data-i18n="learnMore">Learn More About the Project</span>
+                <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="images/Logo Background.png" alt="" loading="lazy"/>
+        </div>
+      </section>
+      <section class="default-background wrapper style1 align-left">
+        <div class="inner">
+          <h2 id="first" data-i18n="featuresTitle">Features</h2>
+          <div class="items features-container">
+            <section class="feature">
+              <div class="feature-title">
+                <svg class="feature-icon story" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M4.5 21a7.5 7.5 0 0 1 15 0" />
+                </svg>
+                <h3 data-i18n="cfStoriesTitle">CF Stories</h3>
+              </div>
+              <p data-i18n="cfStoriesDescription">
+                Learn from people living with CF as they share personal
+                experiences about considering, preparing for, and living after
+                lung transplant.
+              </p>
+            </section>
+            <section class="feature">
+              <div class="feature-title">
+                <svg class="feature-icon resource" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <rect x="4" y="3" width="16" height="18" rx="2" />
+                  <path d="M8 8h1M12 8h4M8 12h1M12 12h4M8 16h1M12 16h4" />
+                </svg>
+                <h3 data-i18n="resourceLibraryTitle">Resource Library</h3>
+              </div>
+              <p data-i18n="resourceLibraryDescription">
+                Explore educational resources about transplant referral,
+                evaluation, surgery, recovery, caregiving, mental health,
+                quality of life, and life after transplant.
+              </p>
+            </section>
+            <section class="feature">
+              <div class="feature-title">
+                <svg class="feature-icon faq" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.7 9.7 0 0 1-4-.9L3 21l1.6-4.3A8.3 8.3 0 1 1 21 11.5Z" />
+                  <path d="M8 11h.01M12 11h.01M16 11h.01" />
+                </svg>
+                <h3 data-i18n="faqTitle">Frequently Asked Questions</h3>
+              </div>
+              <p data-i18n="faqDescription">
+                Read answers to common questions about lung transplant provided
+                by people with CF who have undergone transplant.
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
 
-				<!-- Six -->
-					<section class="wrapper style1 align-left" style="background: #faf7fd;">
-						<div class="inner">
-							<h2 id="first">Features</h2>
-							<div class="items style3 medium onscroll-fade-in">
-								<section class="feature">
-									<i class="fa fa-user icon story align-center" aria-hidden="true"></i>
-									<h3>CF Stories</h3>
-									<p>Explore stories from people living with cystic fibrosis (CF) as they share their experiences with lung transplant.</p>
-								</section>
-								<section class="feature">
-									<i class="fa fa-list-alt icon resource align-center" aria-hidden="true"></i>
-									<h3>Resource Library</h3>
-									<p>Find medical information, facts, and helpful resources as you consider lung transplant for yourself or as a caregiver.</p>
-								</section>
-								<section class="feature">
-									<i class="fa fa-comments icon faq align-center" aria-hidden="true"></i>
-									<h3>Frequently Asked Questions</h3>
-									<p>Read questions about lung transplant and answers provided by people with CF who have undergone lung transplant.</p>
-								</section>
-							</div>
-						</div>
-					</section>
-				
-					<section class="spotlight style5 orient-left content-align-left image-position-center invert onscroll-image-fade-in" style="background: #502b91;">
-						<div class="content">
-							<h2 id="demo">Explore Our Demo</h2>
-							<!--<p>Navigate through our demo site at your own pace to see how to register, take the initial My CF Stage survey, and view recommended content.</p>
-							<a href="https://demo.takeontransplant.org/users/login" target="_blank" class="button big wide smooth-scroll-middle">Try the Demo Site  <i class="fa fa-caret-right"></i> </a>
-							-->
-								
-							<p><br><br>View a short video that demonstrates the <b>Take on Transplant&#x2122; </b> tool. See how to register, take the initial My CF Stage survey, and view recommended content. Learn about the features of <b>Take On Transplant</b>.</p>
-							
-							<a onclick="toggle_visibility('video');" href="#video" class="button smooth-scroll-middle">See the Demo Video</a>
-							<p></p>
+      <section
+        class="spotlight style5 orient-right content-align-left image-position-left invert"
+      >
+        <div class="image fade-bg">
+          <img src="images/languageSwitch.png" alt="Language Switch" loading="lazy"/>
+        </div>
+        <div class="content default-background">
+          <h2 id="languages" class="default-color" data-i18n="languagesTitle">
+            Languages
+          </h2>
+          <div class="items flex-align-center pt-half pb-2 default-color">
+            <img src="images/language.png" alt="Language icon" width="50" loading="lazy"/>
+            <p data-i18n="languagesDescription" class="text-left">
+              Take on Transplant™ is available in both English and Spanish to
+              improve access to transplant education for people with CF and
+              their loved ones.
+            </p>
+          </div>
+        </div>
+      </section>
 
-						</div>
-						<div class="image">
-							<img src="images/Header.png" alt="" />
-						</div>
-					</section>
-				
-					<section class="wrapper style1 align-center" style="background: #faf7fd; display: none;" id="video">
-						<div class="inner">
-							<iframe class='sproutvideo-player' src='https://videos.sproutvideo.com/embed/ea9ddbb9151fe4c163/4fb76d5c32d9cf9f?playerTheme=light' width='100%' height='400' frameboarder='0' allowfullscreen></iframe>
-						</div>
-					</section>
+      <section
+        class="spotlight style5 orient-left content-align-left image-position-center invert"
+        style="background: #502b91"
+        id="videoDemoSection"
+      >
+        <div class="content">
+          <h2 id="demo" data-i18n="exploreDemoTitle">Explore Our Demo</h2>
 
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" style="background: #faf7fd;">
-						<div class="content">
-							<h2>Why Take on Transplant was developed</h2>
-							<p>Lung transplant is a treatment option for advanced cystic fibrosis (CF) and has the potential to improve quality of life and extend a person's life by a decade or more. In the US, after reaching an FEV1 < 30% an equal number of people with CF die each year as undergo lung transplant. More than half of CF patients who die without transplant were never referred for lung transplant.</p>
-							<p>Our research shows that there are opportunities to help people with CF feel more prepared to discuss transplant as a treatment option. A survey demonstrated a gap between how prepared patients feel and how prepared they want to feel about lung transplant decisions. Knowledge gaps were identified related to survival benefit, improvements in health-related quality of life, and contraindications to lung transplant.</p>
-						</div>
-						<div class="image">
-							<img src="images/20180808_Neuro CSE Shoot_118 1.png" alt="" />
-						</div>
-					</section>
-				
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background: #faf7fd;">
-						<div class="content">
-							<h2>How Take on Transplant was developed</h2>
-							<p>We developed this website with you in mind. We worked closely with people living with CF, including individuals who have undergone lung transplant and people who decided not to have a lung transplant. We interviewed more than 50 people with CF to better understand their journeys and what could have made their experiences better and transitions easier. ​This website was developed with the help of their insights and suggestions. We also interviewed caregivers for people with CF and incorporated information about support during the transition to transplant.</p>
-							<p>Content found in the site activities has been vetted by CF and lung transplant physicians as well as patients. The medical information includes recommendations supported by Cystic Fibrosis Foundation guidelines. The details you will find include the most up-to-date information available, which will provide you with tools to help in having informed discussions about lung transplant with your CF team.</p>
-							<p>Please note: Vertex Pharmaceuticals (the makers of “Trikafta”) did not provide funding for the creation of Take on Transplant and did not participate in any way in the development of this website.</p>
-						</div>
-						<div class="image">
-							<img src="images/kaleidico-26MJGnCM0Wc-unsplash.png" alt="" />
-						</div>
-					</section>
+          <p class="content-description text-left" data-i18n="exploreDemoDescription">
+            View a short video demonstration of the Take on Transplant™ website.
+            Learn how to take the initial My CF Stage Survey and explore
+            personalized educational content and resources.
+          </p>
 
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" style="background: #faf7fd;">
-						<div class="content">
-							<h2>About Us</h2>
-							<p><b>Take on Transplant&#x2122;</b> is sponsored by grants from the Cystic Fibrosis Foundation and the National Institutes of Health. Our research team is located at the University of Washington (in Seattle, WA) and includes CF and lung transplant physicians, researchers with experience in CF and lung transplant, and clinical informatics experts. Drs. Ramos and Kapnadak wrote and edited the medical information included in the tool. They also ensured the medical accuracy of patients’ and caregivers’ stories. Dr. Hobler is a PhD researcher who conducted interviews with patients and caregivers and worked with interview participants to create the CF Stories. Our research team has authored multiple scientific papers describing outcomes for people with advanced CF and those who undergo lung transplant.</p>
-								<h3>Clinical Team</h3>
-								<h4 id="Ramos">Dr. Kathleen Ramos</h4>
-								<p>Dr. Ramos is an adult pulmonologist working in the University of Washington (UW) Adult Cystic Fibrosis Center and the UW Lung Transplant Program. She works in both the clinic and hospital settings to care for people with CF and people who undergo lung transplant. She has a Masters in epidemiology from the UW School of Public Health. Her research focuses on advanced CF lung disease and lung transplantation, with an emphasis on clinical outcomes. She served as co-Chair of the CF Foundation lung transplant referral guidelines committee and was the lead author of the guidelines document. She is currently the co-Chair of the committee to revise the International Society of Heart and Lung Transplantation consensus recommendations for the selection of lung transplant candidates. She has a special interest in improving access to lung transplant for people at a high risk of dying from CF, with a focus on empowering patients to understand lung transplant as a treatment option.</p>
-								<h4 id="Kapnadak">Dr. Siddhartha Kapnadak</h4>
-								<p>Dr. Kapnadak is an adult pulmonologist whose clinical work is focused on caring for patients after lung transplantation, along with those with advanced lung disease nearing transplantation. He has a special interest in improving care and outcomes in advanced cystic fibrosis lung disease, including issues impacting transplant candidacy and the peri- and post-transplant period. He was lead author on the 2020 CF Foundation consensus guidelines for the care of individuals with advanced CF lung disease, and has served in various roles through the International Society for Heart and Lung Transplantation, and the American College of Chest Physicians.</p>
-								
-								<!--Dr. Kathleen Ramos<br>
-								Dr. Siddhartha Kapnadak<br>-->
-								<h3>Project Team</h3>
-								<h4>Dr. Kathleen Ramos<br>
-								Dr. Siddhartha Kapnadak<br>
-								Dr. Andrea L Hartzler<br>
-								Lauren Bartlett<br>
-								Dr. Mara R Hobler<br>
-								Nick Reid<br>
-								Dr. Chris Goss<br>
-								Dr. William Lober<br>
-								Dr. Donna Berry<br>
-								Justin McReynolds<br>
-								Amy Chen<br>
-								Sierramatice Karras</h4>
-							
-						</div>
-						<div class="image">
-							<img src="images/cflt_landing_main.jpeg" alt="" />
-						</div>
-					</section>
-				
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background: #faf7fd;">
-						<div class="content">
-							<h2><i>In Memory of Mara R. Hobler, PhD</i></h2>
-							<p>Dr. Mara Hobler (died August 2021) was an exceptional researcher and colleague who contributed significantly to the development of the “Take on Transplant” lung transplant decision support tool. She brought years of clinical research expertise and qualitative research methodology to the team. She conducted all of the interviews with the people whose stories about cystic fibrosis are presented in "Take on Transplant." She connected with people living with cystic fibrosis and their loved ones while discussing incredibly personal and sensitive subjects. Mara’s empathetic personality allowed her to guide and support people to open up about difficult topics, which aided in constructing answers to important research questions. She published numerous important manuscripts describing communication needs for people with cystic fibrosis. Her untimely death is mourned by all who knew her. We dedicate the "Take on Transplant" lung transplant decision support tool to her memory and let it serve as a reminder of her important impact in the cystic fibrosis research community. </p>
-						</div>
-						<div class="image">
-							<img src="images/Mara.JPG" alt="" />
-						</div>
-					</section>
-				
-					<span class="clip-spacer"></span>
+          <a
+            onclick="showVideo(event, false)"
+            href="#video"
+            class="button"
+          >
+            <span data-i18n="seeDemoVideo">See the Demo Video</span>
+          </a>
+          <p></p>
+        </div>
+        <div class="image">
+          <img src="images/Header.png" alt="" loading="lazy"/>
+        </div>
+      </section>
 
-				<!-- Seven -->
-					<section class="wrapper style1 align-center" style="background: #f3eefa;">
-						<div class="inner medium">
-							<div class="items style3 medium onscroll-fade-in">
-								<section>
-									<a href="https://www.washington.edu/" target="_blank"><img src="images/uwLogo-transparentbg.png" class="image fit" alt="UW logo" /></a>
-								</section>
-								<section>
-									<a href="https://www.cirg.washington.edu/" target="_blank"><img src="images/CIRG_logo.png" class="image fit" style="padding: 3em;" alt="CIRG logo" /></a>
-								</section>
-								<section>
-									<a href="https://www.cff.org/" target="_blank"><img src="images/cf_foundation.svg" class="image fit" alt="CF foundation logo" /></a>
-								</section>
-							</div>
-						</div>
-					</section>
+      <section class="wrapper style1 align-center is-hidden" id="videoSection">
+        <div class="inner video-wrapper">
+          <div class="video-close-container">
+            <button class="button plain" onClick="killVideo()">Close X</button>
+          </div>
+          <div class="video-container"></div>
+        </div>
+      </section>
 
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center" style="background-color: #502b91 !important; color: #ffffff !important;">
-						<div class="inner">
-							<p class="major">Contact Us!</p>
-							<hr/>
-							<ul class="icons">
-								<li>email: takeontransplant@uw.edu</li>
-								<li>phone: 206-543-2140</li>
-							</ul>
-							<p>address: Dr. Kathleen Ramos, 1959 NE Pacific Street, Box 356522, Seattle, WA 98195-6522</p>
-							<p>&copy; 2021 University of Washington All rights reserved</p>
-						</div>
-					</footer>
+      <section
+        class="default-background spotlight style1 orient-right content-align-left image-position-center"
+      >
+        <div class="content">
+          <h2 data-i18n-html="whyDevelopedTitle">
+            Why Take on Transplant<sup>™</sup> was developed
+          </h2>
+          <p data-i18n="whyDevelopedParagraph1">
+            Lung transplant is an important treatment option for some people
+            with advanced CF lung disease and may improve quality of life and
+            extend survival. However, transplant is also a major medical
+            decision that can feel overwhelming for patients and families.
+          </p>
+          <p data-i18n="whyDevelopedParagraph2">
+            Research studies have shown that many people with CF want more
+            information and feel underprepared for conversations and decisions
+            related to lung transplant. People living with CF may have questions
+            about survival, quality of life, recovery, caregiving needs,
+            eligibility, timing of referral, and life after transplant.
+          </p>
+          <p data-i18n="whyDevelopedParagraph3">
+            Take on Transplant™ was developed to help address these gaps by
+            providing accessible, evidence-based educational resources alongside
+            real-world experiences shared by people with CF and caregivers.
+          </p>
+          <p data-i18n="whyDevelopedParagraph4">
+            The website encourages early education and open communication
+            between people with CF, their loved ones, CF care teams, and lung
+            transplant programs. While lung transplant is not the right choice
+            for everyone, understanding transplant as a treatment option can
+            help people make informed decisions that align with their goals and
+            values.
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/20180808_Neuro CSE Shoot_118 1.png" alt="" loading="lazy"/>
+        </div>
+      </section>
 
-			</div>
+      <section
+        class="default-background spotlight style1 orient-left content-align-left image-position-center"
+      >
+        <div class="content">
+          <h2 data-i18n-html="howDevelopedTitle">
+            How Take on Transplant<sup>™</sup> was developed
+          </h2>
+          <p data-i18n="howDevelopedParagraph1">
+            Take on Transplant™ was developed in partnership with people living
+            with CF, caregivers, transplant recipients, and clinicians.
+          </p>
+          <p data-i18n="howDevelopedParagraph2">
+            Our research team interviewed more than 50 people with CF, including
+            individuals who underwent lung transplant and people who decided not
+            to pursue transplant. We also interviewed caregivers and family
+            members to better understand their experiences, concerns, and
+            support needs during the transplant journey.
+          </p>
+          <p data-i18n="howDevelopedParagraph3">
+            The stories, educational materials, and website features were shaped
+            by the insights and recommendations shared during these interviews.
+          </p>
+          <p data-i18n="howDevelopedParagraph4">
+            Medical content throughout the website has been reviewed by CF and
+            lung transplant physicians and incorporates recommendations
+            supported by Cystic Fibrosis Foundation guidelines and current
+            transplant care practices.
+          </p>
+          <p data-i18n="howDevelopedParagraph5">
+            Take on Transplant™ was developed with research funding from the
+            National Institutes of Health (NIH) and the Cystic Fibrosis
+            Foundation.
+          </p>
+          <p data-i18n="howDevelopedParagraph6">
+            Please note: Vertex Pharmaceuticals (the makers of “Trikafta” and
+            other CFTR modulators) did not provide funding for the creation of
+            Take on Transplant™ and did not participate in the development of
+            this website.
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/kaleidico-26MJGnCM0Wc-unsplash.png" alt="" loading="lazy"/>
+        </div>
+      </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <section
+        class="default-background spotlight style1 orient-right content-align-left image-position-center"
+      >
+        <div class="content">
+          <h2 data-i18n="aboutUsTitle">About Us</h2>
+          <p data-i18n="aboutUsParagraph1">
+            The Take on Transplant™ research team is based at the University of
+            Washington in Seattle, WA and includes CF and lung transplant
+            physicians, researchers with experience in CF and lung
+            transplantation, qualitative researchers, and clinical informatics
+            specialists.
+          </p>
+          <p data-i18n="aboutUsParagraph2">
+            Drs. Kathleen Ramos and Siddhartha Kapnadak wrote and reviewed the
+            medical content included throughout the website and ensured medical
+            accuracy across patient and caregiver stories.
+          </p>
+          <p data-i18n="aboutUsParagraph3">
+            Dr. Mara Hobler, a qualitative researcher, conducted interviews with
+            patients and caregivers and worked closely with participants to
+            develop the CF Stories featured on the website.
+          </p>
+          <p data-i18n="aboutUsParagraph4">
+            Our team has authored multiple scientific publications focused on
+            advanced CF lung disease, lung transplantation, communication, and
+            patient-centered outcomes.
+          </p>
+          <hr class="dark" />
+          <h3 data-i18n="clinicalTeamTitle" class="narrow-gap">
+            Clinical Team
+          </h3>
+          <h4 id="Ramos" data-i18n="ramosName" class="half-gap">
+            Dr. Kathleen Ramos
+          </h4>
+          <p data-i18n="ramosParagraph">
+            Dr. Ramos is an adult pulmonologist working in the University of
+            Washington (UW) Adult Cystic Fibrosis Center and the UW Lung
+            Transplant Program. She cares for people with CF and individuals
+            living with lung transplant. She also holds a Master’s degree in
+            epidemiology from the UW School of Public Health. Her research
+            focuses on advanced CF lung disease and lung transplantation, with
+            an emphasis on clinical outcomes and improving access to transplant
+            for people at high risk of dying from CF lung disease. She served as
+            co-chair of the Cystic Fibrosis Foundation lung transplant referral
+            guidelines committee and was the lead author of the resulting
+            guidelines document. She also co-chaired the committee that revised
+            the International Society of Heart and Lung Transplantation
+            consensus recommendations for the selection of lung transplant
+            candidates.
+          </p>
+          <h4 id="Kapnadak" data-i18n="kapnadakName" class="half-gap">
+            Dr. Siddhartha Kapnadak
+          </h4>
+          <p data-i18n="kapnadakParagraph">
+            Dr. Kapnadak is an adult pulmonologist (lung doctor) in the
+            University of Washington (UW) Adult Cystic Fibrosis Center and the
+            UW Lung Transplant Program. His clinical work focuses on caring for
+            people with advanced lung disease, individuals undergoing lung
+            transplant, and people living with CF. His research and clinical
+            interests include improving outcomes in advanced CF lung disease,
+            lung transplant candidacy, and care before and after transplant. He
+            was lead author of the 2020 Cystic Fibrosis Foundation consensus
+            guidelines for advanced CF lung disease, and has served in various
+            roles within the International Society for Heart and Lung
+            Transplantation and the American College of Chest Physicians.
+          </p>
+          <hr class="dark" />
+          <div>
+            <h3 data-i18n="projectTeamTitle" class="narrow-gap">
+              Project Team
+            </h3>
+            <div class="flex-align-start flex-gap-4 flex-wrap">
+              <h4 class="flex-list">
+                <span>Kathleen Ramos,<span class="degree">MD, MS</span></span>
+                <span>Siddhartha Kapnadak, <span class="degree">MD</span></span>
+                <span
+                  >Andrea L. Hartzler, <span class="degree">PhD</span></span
+                >
+                <span
+                  >Donna Berry, <span class="degree">PhD, RN, FAAN</span></span
+                >
+                <span>Melissa Basile, <span class="degree">PhD</span></span>
+                <span
+                  >Rebecca Mueller, <span class="degree">PhD, LCGC</span></span
+                >
+                <span
+                  >Alexi Vasbinder, <span class="degree">PhD, RN</span></span
+                >
+                <span>Mara R. Hobler, <span class="degree">PhD</span></span>
+              </h4>
+              <h4 class="flex-list">
+                <span>Kristin Riekert, <span class="degree">PhD</span></span>
+                <span>Patrick Smith, <span class="degree">PhD</span></span>
+                <span>Tijana Milinic, <span class="degree">MD, MS</span></span>
+                <span
+                  >Lauren Bartlett, <span class="degree">BS, CCRC</span></span
+                >
+                <span>Sierra Knapp, <span class="degree">MPH</span></span>
+                <span>Dave Young</span>
+                <span>Nick Reid</span>
+              </h4>
+            </div>
+          </div>
+          <hr class="dark" />
+          <div>
+            <h3 data-i18n="clinicalInformaticsTeamTitle" class="narrow-gap">
+              Clinical Informatics Team
+            </h3>
+            <h4
+              class="flex-list"
+              data-i18n-html="clinicalInformaticsTeamMembers"
+            >
+              <span>William Lober, <span class="degree">MD, MS</span></span>
+              <span>Justin McReynolds, <span class="degree">MS</span></span>
+              <span>Amy Chen</span>
+              <span>Sierramatice Karras</span>
+            </h4>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/cflt_landing_main.jpeg" alt=""  loading="lazy"/>
+        </div>
+      </section>
 
-	</body>
+      <section
+        class="default-background spotlight style1 orient-left content-align-left image-position-center"
+      >
+        <div class="content">
+          <h2>
+            <i data-i18n="inMemoryTitle">In Memory of Mara R. Hobler, PhD</i>
+          </h2>
+          <p data-i18n="inMemoryParagraph1">
+            Dr. Mara Hobler (died August 2021) was an exceptional researcher,
+            colleague, and friend who contributed profoundly to the development
+            of Take on Transplant™.
+          </p>
+          <p data-i18n="inMemoryParagraph2">
+            She conducted interviews with people living with CF and their loved
+            ones about deeply personal and emotional experiences related to
+            advanced lung disease and lung transplant. Mara’s empathy,
+            compassion, and skill as a qualitative researcher helped
+            participants feel comfortable sharing difficult experiences and
+            perspectives that shaped this project.
+          </p>
+          <p data-i18n="inMemoryParagraph3">
+            Her work contributed meaningfully to improving communication and
+            understanding around lung transplant for people living with CF.
+          </p>
+          <p data-i18n="inMemoryParagraph4">
+            We dedicate Take on Transplant™ to her memory and honor the lasting
+            impact she made on the CF research community.
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/Mara.JPG" alt=""  loading="lazy"/>
+        </div>
+      </section>
+
+      <span class="clip-spacer"></span>
+
+      <!-- Seven -->
+      <section class="wrapper style1 align-center bg-alt">
+        <div class="inner medium">
+          <div class="items style3 medium">
+            <section>
+              <a href="https://www.washington.edu/" target="_blank"
+                ><img
+                  src="images/uwLogo-transparentbg.png"
+                  class="image fit uw-footer-logo"
+                  alt="UW logo"
+              /></a>
+            </section>
+            <section>
+              <a href="https://www.cirg.washington.edu/" target="_blank"
+                ><img
+                  src="images/CIRG_logo.png"
+                  class="image fit cirg-footer-logo"
+                  alt="CIRG logo"
+                  loading="lazy"
+              /></a>
+            </section>
+            <section>
+              <a href="https://www.cff.org/" target="_blank"
+                ><img
+                  src="images/cf_foundation.svg"
+                  class="image fit cf-footer-logo"
+                  alt="CF foundation logo"
+                  loading="lazy"
+              /></a>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="wrapper style1 align-center">
+        <div class="inner">
+          <div class="footer-contact">
+            <div class="footer-contact-row">
+              <div class="footer-contact-label">&nbsp;</div>
+              <div class="footer-contact-value">
+                <h2 data-i18n="contactUs" class="footer-heading">Contact Us</h2>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="footer-contact">
+            <div class="footer-contact-row">
+              <div class="footer-contact-label">
+                <span data-i18n="emailLabel">Email:</span>
+              </div>
+
+              <div class="footer-contact-value">
+                <a href="mailto:takeontransplant@uw.edu">
+                  takeontransplant@uw.edu
+                </a>
+              </div>
+            </div>
+            <div class="footer-contact-row">
+              <div class="footer-contact-label">
+                <span data-i18n="addressLabel">Address:</span>
+              </div>
+
+              <div class="footer-contact-value">
+                Dr. Kathleen Ramos,<br />
+                1959 NE Pacific Street, Box 356522,<br />
+                Seattle, WA 98195-6522
+              </div>
+            </div>
+          </div>
+          <hr />
+          <p data-i18n="copyright" class="footer-copyright">
+            &copy; 2021 University of Washington All rights reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js?08-07-26%2014%3A47%3A34%20"></script>
+    <script src="assets/js/translation.js?08-07-26%2014%3A47%3A34%20"></script>
+  </body>
 </html>

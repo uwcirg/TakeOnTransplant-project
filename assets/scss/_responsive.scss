@@ -1,0 +1,215 @@
+// =========================================================
+// Responsive overrides
+// =========================================================
+
+@use "variables";
+@use "mixins";
+
+@include mixins.max-width(variables.$bp-wide) {
+  html {
+    font-size: 14pt;
+  }
+
+  .banner.style2 .content {
+    padding: 3.75rem 3.75rem 1.75rem;
+  }
+
+  .spotlight.style1 .content {
+    padding: 5rem;
+  }
+
+  .spotlight.style5 {
+    padding: 3rem 3.75rem;
+  }
+
+  .spotlight.style5 .content,
+  .wrapper.style1 > .inner {
+    padding: 3.5rem 2.5rem;
+  }
+}
+
+@include mixins.max-width(variables.$bp-large) {
+  html {
+    font-size: 12pt;
+  }
+
+  .banner.style2 .content {
+    padding: 4rem 3rem 2rem;
+  }
+
+  .spotlight.style1 .content {
+    padding: 4rem;
+  }
+
+  .spotlight.style5 {
+    padding: 3rem;
+  }
+
+  .spotlight.style5 .content {
+    padding: 3rem 2rem;
+  }
+
+  .wrapper.style1 > .inner {
+    padding: 4rem;
+  }
+}
+
+@include mixins.max-width(variables.$bp-medium) {
+  .banner.style2 .content {
+    padding: 3.75rem 2.25rem 1.75rem;
+  }
+
+  .spotlight.style1 .content {
+    width: 50%;
+    min-width: 0;
+
+    padding: 3.75rem 3rem;
+  }
+
+  .spotlight.style1 .image {
+    width: 50%;
+    min-width: 0;
+  }
+
+  .spotlight.style5 {
+    padding: 3rem 2.25rem 2rem;
+  }
+
+  .spotlight.style5 .content {
+    padding: 2.25rem;
+  }
+
+  .wrapper.style1 > .inner {
+    padding: 3.5rem 3rem 4.5rem;
+  }
+
+  .items.style3.medium > * {
+    width: 100%;
+    padding: 1.75rem 1.75rem 0.1rem;
+  }
+}
+
+@include mixins.max-width(variables.$bp-small) {
+  html {
+    font-size: 11pt;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  p.major {
+    font-size: 1.1rem;
+  }
+
+  .banner.style2 .content {
+    padding: 2.5rem 1.5rem 0.5rem;
+  }
+
+  .spotlight.style1 .content {
+    padding: 2.5rem 2rem;
+  }
+
+  .spotlight.style5 {
+    padding: 2rem 1.5rem 2.5rem;
+  }
+
+  .spotlight.style5 .content {
+    padding: 1.5rem;
+  }
+
+  .wrapper.style1 > .inner {
+    padding: 3.5rem 2rem 4.5rem;
+  }
+
+  .items.style3 {
+    margin: 2rem 0;
+  }
+}
+
+@include mixins.small-portrait {
+  .spotlight.style1,
+  .spotlight.style1.orient-right {
+    flex-direction: column-reverse;
+    text-align: center !important;
+  }
+
+  .spotlight.style1 .content,
+  .spotlight.style1 .image {
+    width: 100%;
+  }
+
+  .spotlight.style1 .image img {
+    position: relative;
+  }
+}
+
+@include mixins.max-width(variables.$bp-xsmall) {
+  ul.actions:not(.fixed) {
+    flex-direction: column;
+
+    width: 100% !important;
+
+    margin-left: 0;
+  }
+
+  ul.actions:not(.fixed) li {
+    flex: 1 1 auto;
+
+    width: 100%;
+
+    padding: 1rem 0 0;
+
+    text-align: center;
+  }
+
+  ul.actions:not(.fixed) li:first-child {
+    padding-top: 0;
+  }
+
+  ul.actions:not(.fixed) li .button,
+  ul.actions:not(.fixed) li > * {
+    width: 100%;
+  }
+
+  .spotlight.style5 .content {
+    max-width: 80%;
+  }
+
+  .items.style3.medium > * {
+    width: 100%;
+    padding: 1.3125rem 0 0.1rem;
+  }
+
+  .items.style3.medium > :first-child {
+    padding-top: 0;
+  }
+
+  .items.style3.medium > :last-child {
+    padding-bottom: 0;
+  }
+}
+
+@include mixins.max-width(variables.$bp-xxsmall) {
+  html {
+    font-size: 10pt;
+  }
+}
+
+@include mixins.min-width(variables.$bp-footer-grid) {
+  .footer-contact-row {
+    width: 50%;
+  }
+}
