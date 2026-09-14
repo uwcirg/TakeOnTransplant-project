@@ -98,8 +98,7 @@ function setLanguage(lang) {
 function getSavedLanguage() {
   const urlParams = new URLSearchParams(window.location.search);
   const paramLang = urlParams.get("userLang");
-  const userLang = paramLang ? paramLang.toLowerCase() : null;
-  return userLang || localStorage.getItem("siteLanguage") || "en_US";
+  return paramLang || localStorage.getItem("siteLanguage") || "en_US";
 }
 
 function handleVideoVisibility(lang, isInitialLoad = true) {
@@ -128,13 +127,24 @@ function initializeLanguageSwitcher() {
     setLanguage(e.target.value);
     console.log("Selected language:", e.target.value);
     handleVideoVisibility(e.target.value, true);
+    handleAppButtonURL();
     clearUserLangParam();
   });
+}
+
+function handleAppButtonURL() {
+  const btnGoToApp = document.getElementById("btnGoToApp");
+  if (!btnGoToApp) return;
+  const savedLanguage = getSavedLanguage();
+  const url = new URL(btnGoToApp.href);
+  url.searchParams.set("userLang", savedLanguage);
+  btnGoToApp.href = url.toString();
 }
 
 domReady(async () => {
   await loadTranslations();
   initializeLanguageSwitcher();
+  handleAppButtonURL();
   const savedLanguage = getSavedLanguage();
   setLanguage(savedLanguage);
   handleVideoVisibility(savedLanguage);
