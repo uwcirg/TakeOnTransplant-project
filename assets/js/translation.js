@@ -127,8 +127,8 @@ function initializeLanguageSwitcher() {
     setLanguage(e.target.value);
     console.log("Selected language:", e.target.value);
     handleVideoVisibility(e.target.value, true);
-    handleAppButtonURL();
     clearUserLangParam();
+    handleAppButtonURL();
   });
 }
 
