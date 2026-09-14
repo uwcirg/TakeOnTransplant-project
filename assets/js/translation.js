@@ -19,11 +19,12 @@ async function loadTranslations() {
 }
 
 function getTranslation(lang, key) {
-  if (!translations || !translations[lang]) {
+  const langKey = String(lang).toLowerCase();
+  if (!lang || !translations || !translations[langKey]) {
     console.warn(`Language "${lang}" not found`);
     return null;
   }
-  return translations[lang][key];
+  return translations[langKey][key];
 }
 
 function applyTextTranslations(lang) {
@@ -77,7 +78,8 @@ function setDocumentLanguage(lang) {
 }
 
 function setLanguage(lang) {
-  if (!translations || !translations[lang]) {
+  const langKey = String(lang).toLowerCase();
+  if (!translations || !translations[langKey]) {
     console.warn(`Language "${lang}" not found`);
     return;
   }
@@ -97,11 +99,11 @@ function getSavedLanguage() {
   const urlParams = new URLSearchParams(window.location.search);
   const paramLang = urlParams.get("userLang");
   const userLang = paramLang ? paramLang.toLowerCase() : null;
-  return userLang || localStorage.getItem("siteLanguage") || "en_us";
+  return userLang || localStorage.getItem("siteLanguage") || "en_US";
 }
 
 function handleVideoVisibility(lang, isInitialLoad = true) {
-  if (lang !== "en_us") {
+  if (String(lang).toLowerCase() !== "en_us") {
     hideVideo();
     return;
   }
@@ -120,6 +122,7 @@ function initializeLanguageSwitcher() {
     document.getElementById("languageSwitcher");
   if (!switcher) return;
   const savedLanguage = getSavedLanguage();
+  console.log("Saved language:", savedLanguage);
   switcher.value = savedLanguage;
   switcher.addEventListener("change", (e) => {
     setLanguage(e.target.value);
