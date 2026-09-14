@@ -94,16 +94,25 @@ function setLanguage(lang) {
 }
 
 function getSavedLanguage() {
-  return localStorage.getItem("siteLanguage") || "en";
+  const urlParams = new URLSearchParams(window.location.search);
+  const paramLang = urlParams.get("userLang");
+  const userLang = paramLang ? paramLang.toLowerCase() : null;
+  return userLang || localStorage.getItem("siteLanguage") || "en_us";
 }
 
 function handleVideoVisibility(lang, isInitialLoad = true) {
-  if (lang !== "en") {
+  if (lang !== "en_us") {
     hideVideo();
     return;
   }
   showVideo(null, isInitialLoad);
 
+}
+
+function clearUserLangParam() {
+  const url = new URL(window.location.href);
+  url.searchParams.delete("userLang");
+  window.history.replaceState({}, document.title, url.toString());
 }
 
 function initializeLanguageSwitcher() {
@@ -116,6 +125,7 @@ function initializeLanguageSwitcher() {
     setLanguage(e.target.value);
     console.log("Selected language:", e.target.value);
     handleVideoVisibility(e.target.value, true);
+    clearUserLangParam();
   });
 }
 
