@@ -1,0 +1,43 @@
+// =========================================================
+// Wrapper sections and partner logos
+// =========================================================
+
+.wrapper.style1 > .inner {
+  width: 64rem;
+  max-width: 100%;
+
+  margin: 0 auto;
+  padding: 7rem 3.5rem 5rem;
+}
+
+.wrapper.style1 > .inner.medium {
+  width: 50rem;
+}
+
+.items.style3 {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin: 2rem 0;
+}
+
+.items.style3 > * {
+  flex: 0 0 auto;
+}
+
+.items.style3.medium > * {
+  width: calc(100% / 3 - 2 * 1.09375rem);
+  padding: 1.09375rem 1.09375rem 0.1rem;
+}
+
+.cirg-footer-logo {
+  position: relative;
+
+  width: 70% !important;
+  max-width: 100%;
+
+  margin: auto !important;
+}

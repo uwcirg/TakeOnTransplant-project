@@ -1,0 +1,28 @@
+// =========================================================
+// Take on Transplant
+// Main Sass entry point
+// =========================================================
+//
+// Compile this file to assets/css/main.css.
+//
+// Dart Sass:
+//   sass assets/scss/main.scss assets/css/main.css --style=expanded
+//
+// Production/minified:
+//   sass assets/scss/main.scss assets/css/main.css --style=compressed
+
+@use "variables";
+@use "base";
+@use "header";
+@use "layout";
+@use "buttons";
+@use "hero";
+@use "spotlights";
+@use "features";
+@use "utilities";
+@use "video";
+@use "partners";
+@use "footer";
+@use "decorative";
+@use "responsive";
+@use "noscript";

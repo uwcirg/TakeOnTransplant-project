@@ -1,0 +1,73 @@
+// =========================================================
+// Hero banner
+// =========================================================
+
+.banner.style2 {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+  background-color: inherit;
+
+  text-align: left;
+}
+
+.banner.style2 .content {
+  position: relative;
+  z-index: 1;
+
+  width: 40rem;
+  max-width: 100%;
+
+  margin-bottom: 2rem;
+  padding: 5.25rem 5.25rem 3.25rem;
+
+  border-radius: 0.5rem;
+
+  background-color: inherit;
+}
+
+.banner.style2 .content.wide {
+  width: 50rem;
+  padding: 3rem 3.25rem 2.25rem;
+}
+
+.banner.style2.orient-left .content {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.banner.style2 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 0;
+}
+
+.banner.style2 .image img,
+.spotlight.style1 .image img,
+.spotlight.style5 .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 0;
+
+  object-fit: cover;
+  object-position: center;
+}

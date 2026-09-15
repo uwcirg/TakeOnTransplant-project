@@ -1,0 +1,53 @@
+// =========================================================
+// Team and utility classes
+// =========================================================
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex-align-center p {
+  margin: 0;
+}
+
+.flex-align-start {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.flex-gap-4 {
+  gap: 4rem;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.25rem;
+
+  margin-bottom: 0.25rem;
+}
+
+.degree {
+  margin-left: 4px;
+  font-size: 1rem;
+}
+
+.pt-half {
+  padding-top: 0.5rem !important;
+}
+
+.pb-2 {
+  padding-bottom: 2rem !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
