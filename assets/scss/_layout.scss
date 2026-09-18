@@ -77,6 +77,11 @@
   max-width: 200px;
   margin: auto;
 }
+@media screen and (max-width: 736px) {
+  .image.fit {
+    max-width: 140px;
+  }
+}
 
 .banner .image,
 .spotlight .image {

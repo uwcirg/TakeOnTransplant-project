@@ -21,7 +21,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link
       rel="stylesheet"
-      href="assets/css/main.css?08-16-26%2015%3A47%3A34%20"
+      href="assets/css/main.css?09-18-26%2015%3A47%3A34%20"
     />
   </head>
   <noscript
@@ -91,7 +91,17 @@
           </ul>
         </div>
         <div class="image">
-          <img src="images/Logo Background.png" alt="" loading="lazy" />
+          <img
+            src="images/Logo Background.png"
+            srcset="
+              images/responsive/Logo Background-480.png 480w,
+              images/responsive/Logo Background-800.png 800w,
+              images/responsive/Logo Background-1200.png 1200w
+            "
+            sizes="(max-width: 736px) 100vw, 50vw"
+            alt=""
+            fetchpriority="high"
+          />
         </div>
       </section>
       <section class="default-background wrapper style1 align-left">
@@ -166,12 +176,23 @@
         <div class="image fade-bg">
           <img
             src="images/languageSwitch.png"
+            srcset="
+              images/responsive/languageSwitch-480.png   480w,
+              images/responsive/languageSwitch-800.png   800w,
+              images/responsive/languageSwitch-1200.png 1200w
+            "
+            sizes="(max-width: 736px) 100vw, 50vw"
             alt="Language Switch"
             loading="lazy"
+            decoding="async"
           />
         </div>
         <div class="content default-background">
-          <h2 id="languages" class="default-color text-left" data-i18n="languagesTitle">
+          <h2
+            id="languages"
+            class="default-color text-left"
+            data-i18n="languagesTitle"
+          >
             Languages
           </h2>
           <div class="items flex-align-center pt-half pb-2 default-color">
@@ -213,7 +234,18 @@
           <p></p>
         </div>
         <div class="image">
-          <img src="images/Header.png" alt="" loading="lazy" />
+          <img
+            src="images/Header.png"
+            srcset="
+              images/responsive/Header-480.png   480w,
+              images/responsive/Header-800.png   800w,
+              images/responsive/Header-1200.png 1200w
+            "
+            sizes="(max-width: 736px) 100vw, 50vw"
+            alt=""
+            loading="lazy"
+            decoding="async"
+          />
         </div>
       </section>
 
@@ -263,8 +295,15 @@
         <div class="image">
           <img
             src="images/20180808_Neuro CSE Shoot_118 1.png"
+            srcset="
+              images/responsive/20180808_Neuro CSE Shoot_118 1-480.png 480w,
+              images/responsive/20180808_Neuro CSE Shoot_118 1-800.png 800w,
+              images/responsive/20180808_Neuro CSE Shoot_118 1-1200.png 1200w
+            "
+            sizes="(max-width: 736px) 100vw, 50vw"
             alt=""
             loading="lazy"
+            decoding="async"
           />
         </div>
       </section>
@@ -312,13 +351,173 @@
         <div class="image">
           <img
             src="images/kaleidico-26MJGnCM0Wc-unsplash.png"
+            srcset="
+              images/responsive/kaleidico-26MJGnCM0Wc-unsplash-480.png   480w,
+              images/responsive/kaleidico-26MJGnCM0Wc-unsplash-800.png   800w,
+              images/responsive/kaleidico-26MJGnCM0Wc-unsplash-1200.png 1200w
+            "
+            sizes="(max-width: 736px) 100vw, 50vw"
             alt=""
             loading="lazy"
+            decoding="async"
           />
         </div>
       </section>
 
       <section
+        class="default-background spotlight style1 orient-right content-align-left image-position-center"
+      >
+        <div class="content">
+          <h2 data-i18n="aboutUsTitle">About Us</h2>
+
+          <p data-i18n="aboutUsParagraph1">
+            The Take on Transplant™ research team is based at the University of
+            Washington in Seattle, WA and includes CF and lung transplant
+            physicians, researchers with experience in CF and lung
+            transplantation, qualitative researchers, and clinical informatics
+            specialists.
+          </p>
+
+          <p data-i18n="aboutUsParagraph2">
+            Drs. Kathleen Ramos and Siddhartha Kapnadak wrote and reviewed the
+            medical content included throughout the website and ensured medical
+            accuracy across patient and caregiver stories.
+          </p>
+
+          <p data-i18n="aboutUsParagraph3">
+            Dr. Mara Hobler, a qualitative researcher, conducted interviews with
+            patients and caregivers and worked closely with participants to
+            develop the CF Stories featured on the website.
+          </p>
+
+          <p data-i18n="aboutUsParagraph4">
+            Our team has authored multiple scientific publications focused on
+            advanced CF lung disease, lung transplantation, communication, and
+            patient-centered outcomes.
+          </p>
+        </div>
+
+        <div class="image image-no-upscale">
+          <img
+            src="images/cflt_landing_main.jpeg"
+            srcset="
+              images/responsive/cflt_landing_main-480.jpeg 480w,
+              images/responsive/cflt_landing_main-800.jpeg 800w,
+              images/cflt_landing_main.jpeg                848w
+            "
+            sizes="(max-width: 736px) 100vw, 35vw"
+            alt=""
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </section>
+
+      <section class="default-background wrapper style1 align-left">
+        <div class="inner">
+          <h3 data-i18n="clinicalTeamTitle" class="narrow-gap">
+            Clinical Team
+          </h3>
+
+          <h4 id="Ramos" data-i18n="ramosName" class="half-gap">
+            Dr. Kathleen Ramos
+          </h4>
+
+          <p data-i18n="ramosParagraph">
+            Dr. Ramos is an adult pulmonologist working in the University of
+            Washington (UW) Adult Cystic Fibrosis Center and the UW Lung
+            Transplant Program. She cares for people with CF and individuals
+            living with lung transplant. She also holds a Master’s degree in
+            epidemiology from the UW School of Public Health. Her research
+            focuses on advanced CF lung disease and lung transplantation, with
+            an emphasis on clinical outcomes and improving access to transplant
+            for people at high risk of dying from CF lung disease. She served as
+            co-chair of the Cystic Fibrosis Foundation lung transplant referral
+            guidelines committee and was the lead author of the resulting
+            guidelines document. She also co-chaired the committee that revised
+            the International Society of Heart and Lung Transplantation
+            consensus recommendations for the selection of lung transplant
+            candidates.
+          </p>
+
+          <h4 id="Kapnadak" data-i18n="kapnadakName" class="half-gap">
+            Dr. Siddhartha Kapnadak
+          </h4>
+
+          <p data-i18n="kapnadakParagraph">
+            Dr. Kapnadak is an adult pulmonologist (lung doctor) in the
+            University of Washington (UW) Adult Cystic Fibrosis Center and the
+            UW Lung Transplant Program. His clinical work focuses on caring for
+            people with advanced lung disease, individuals undergoing lung
+            transplant, and people living with CF. His research and clinical
+            interests include improving outcomes in advanced CF lung disease,
+            lung transplant candidacy, and care before and after transplant. He
+            was lead author of the 2020 Cystic Fibrosis Foundation consensus
+            guidelines for advanced CF lung disease, and has served in various
+            roles within the International Society for Heart and Lung
+            Transplantation and the American College of Chest Physicians.
+          </p>
+
+          <hr class="dark" />
+
+          <div>
+            <h3 data-i18n="projectTeamTitle" class="narrow-gap">
+              Project Team
+            </h3>
+
+            <div class="flex-align-start flex-gap-4 flex-wrap">
+              <h4 class="flex-list">
+                <span>Kathleen Ramos, <span class="degree">MD, MS</span></span>
+                <span>Siddhartha Kapnadak, <span class="degree">MD</span></span>
+                <span>Andrea L. Hartzler, <span class="degree">PhD</span></span>
+                <span
+                  >Donna Berry, <span class="degree">PhD, RN, FAAN</span></span
+                >
+                <span>Melissa Basile, <span class="degree">PhD</span></span>
+                <span
+                  >Rebecca Mueller, <span class="degree">PhD, LCGC</span></span
+                >
+                <span
+                  >Alexi Vasbinder, <span class="degree">PhD, RN</span></span
+                >
+                <span>Mara R. Hobler, <span class="degree">PhD</span></span>
+              </h4>
+
+              <h4 class="flex-list">
+                <span>Kristin Riekert, <span class="degree">PhD</span></span>
+                <span>Patrick Smith, <span class="degree">PhD</span></span>
+                <span>Tijana Milinic, <span class="degree">MD, MS</span></span>
+                <span
+                  >Lauren Bartlett, <span class="degree">BS, CCRC</span></span
+                >
+                <span>Sierra Knapp, <span class="degree">MPH</span></span>
+                <span>Dave Young</span>
+                <span>Nick Reid</span>
+              </h4>
+            </div>
+          </div>
+
+          <hr class="dark" />
+
+          <div>
+            <h3 data-i18n="clinicalInformaticsTeamTitle" class="narrow-gap">
+              Clinical Informatics Team
+            </h3>
+
+            <h4
+              class="flex-list"
+              data-i18n-html="clinicalInformaticsTeamMembers"
+            >
+              <span>William Lober, <span class="degree">MD, MS</span></span>
+              <span>Justin McReynolds, <span class="degree">MS</span></span>
+              <span>Amy Chen</span>
+              <span>Sierramatice Karras</span>
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section
         class="default-background spotlight style1 orient-right content-align-left image-position-center"
       >
         <div class="content">
@@ -435,10 +634,21 @@
             </h4>
           </div>
         </div>
-        <div class="image">
-          <img src="images/cflt_landing_main.jpeg" alt="" loading="lazy" />
+        <div class="image image-no-upscale">
+          <img
+            src="images/cflt_landing_main.jpeg"
+            srcset="
+              images/responsive/cflt_landing_main-480.jpeg 480w,
+              images/responsive/cflt_landing_main-800.jpeg 800w,
+              images/cflt_landing_main.jpeg                848w
+            "
+            sizes="(max-width: 736px) 100vw, 50vw"
+            alt=""
+            loading="lazy"
+            decoding="async"
+          />
         </div>
-      </section>
+      </section> -->
 
       <section
         class="default-background spotlight style1 orient-left content-align-left image-position-center"
@@ -470,7 +680,14 @@
           </p>
         </div>
         <div class="image">
-          <img src="images/Mara.JPG" alt="" loading="lazy" />
+          <img
+            src="images/Mara.JPG"
+            srcset="images/responsive/Mara-480.jpg 480w"
+            sizes="(max-width: 736px) 100vw, 50vw"
+            alt=""
+            loading="lazy"
+            decoding="async"
+          />
         </div>
       </section>
 
@@ -486,6 +703,8 @@
                   src="images/uwLogo-transparentbg.png"
                   class="image fit uw-footer-logo"
                   alt="UW logo"
+                  loading="lazy"
+                  decoding="async"
               /></a>
             </section>
             <section>
@@ -495,6 +714,7 @@
                   class="image fit cirg-footer-logo"
                   alt="CIRG logo"
                   loading="lazy"
+                  decoding="async"
               /></a>
             </section>
             <section>
@@ -504,6 +724,7 @@
                   class="image fit cf-footer-logo"
                   alt="CF foundation logo"
                   loading="lazy"
+                  decoding="async"
               /></a>
             </section>
           </div>
