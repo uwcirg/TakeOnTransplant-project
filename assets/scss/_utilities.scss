@@ -2,6 +2,14 @@
 // Team and utility classes
 // =========================================================
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .flex-align-center {
   display: flex;
   align-items: center;
@@ -33,6 +41,20 @@
   gap: 0.25rem;
 
   margin-bottom: 0.25rem;
+}
+
+.flex-two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  @media (min-width: 768px) {
+    & {
+      gap: 4rem;
+      .item {
+        flex: calc(50% - 4rem);
+      }
+    }
+  }
 }
 
 .degree {
