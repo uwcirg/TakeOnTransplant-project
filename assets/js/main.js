@@ -15,13 +15,14 @@ window.addEventListener("load", () => {
 });
 
 function addMatomoTracking() {
+  var siteID = 52;
   if (typeof _paq !== "undefined") {
     _paq.push(["trackPageView"]);
     _paq.push(["enableLinkTracking"]);
   }
   var u = "https://piwik.cirg.washington.edu/";
   _paq.push(["setTrackerUrl", u + "matomo.php"]);
-  _paq.push(["setSiteId", "50"]);
+  _paq.push(["setSiteId", siteID]);
   var d = document,
     g = d.createElement("script"),
     s = d.getElementsByTagName("script")[0];
@@ -30,6 +31,14 @@ function addMatomoTracking() {
   g.defer = true;
   g.src = u + "matomo.js";
   s.parentNode.insertBefore(g, s);
+
+  // no script fallback for users with JavaScript disabled
+  const ns = document.createElement("noscript");
+  ns.innerHTML =
+    '<img src="https://piwik.cirg.washington.edu/matomo.php?idsite=' +
+    siteID +
+    '&amp;rec=1" style="border:0" alt="" />';
+  document.body.appendChild(ns);
 }
 
 function domReady(fn) {
