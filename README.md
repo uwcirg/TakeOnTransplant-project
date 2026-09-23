@@ -7,7 +7,7 @@
 3. Go to http://localhost:8000/ 
 
 ## To update styling
-**SASS** is used to compile scss to css.  To install SASS please see [here](https://sass-lang.com/install/). Please NOTE: to run latest version of SASS, a Node environment of **>20** is required.
+**SASS** is used to compile scss to css.  To install SASS please see [here](https://sass-lang.com/install/). Please NOTE: to run latest version of SASS, a Node environment of **>22** is required.
 1.  Under `scss` directory, update code in the relevant scss file
 2.  At the root directory, run this command: `sass assets/scss/main.scss assets/css/main.css --style=compressed`
 

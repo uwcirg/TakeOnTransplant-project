@@ -5,12 +5,32 @@
 
 "use strict";
 
+const _paq = window._paq || [];
+
 // Remove preload class once the page has loaded.
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.body.classList.remove("is-preload");
   }, 100);
 });
+
+function addMatomoTracking() {
+  if (typeof _paq !== "undefined") {
+    _paq.push(["trackPageView"]);
+    _paq.push(["enableLinkTracking"]);
+  }
+  var u = "https://piwik.cirg.washington.edu/";
+  _paq.push(["setTrackerUrl", u + "matomo.php"]);
+  _paq.push(["setSiteId", "50"]);
+  var d = document,
+    g = d.createElement("script"),
+    s = d.getElementsByTagName("script")[0];
+  g.type = "text/javascript";
+  g.async = true;
+  g.defer = true;
+  g.src = u + "matomo.js";
+  s.parentNode.insertBefore(g, s);
+}
 
 function domReady(fn) {
   if (
@@ -97,3 +117,5 @@ function showVideo(event, isInitialLoad = false) {
     block: "start",
   });
 }
+
+domReady(addMatomoTracking);
