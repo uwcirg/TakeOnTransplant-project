@@ -5,7 +5,7 @@
 
 "use strict";
 
-const _paq = window._paq || [];
+let _paq = window._paq || [];
 
 // Remove preload class once the page has loaded.
 window.addEventListener("load", () => {

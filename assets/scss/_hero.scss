@@ -71,3 +71,9 @@
   object-fit: cover;
   object-position: center;
 }
+
+@media (max-width: 736px) {
+  .banner.style2 .image img {
+    object-position: right;
+  }
+}
