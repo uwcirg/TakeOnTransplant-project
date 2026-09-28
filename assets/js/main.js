@@ -5,8 +5,6 @@
 
 "use strict";
 
-let _paq = window._paq || [];
-
 // Remove preload class once the page has loaded.
 window.addEventListener("load", () => {
   setTimeout(() => {
@@ -14,31 +12,46 @@ window.addEventListener("load", () => {
   }, 100);
 });
 
-function addMatomoTracking() {
-  var siteID = 50;
-  if (typeof _paq !== "undefined") {
-    _paq.push(["trackPageView"]);
-    _paq.push(["enableLinkTracking"]);
+let _paq = (window._paq = window._paq || []);
+
+function getMatomoSiteId() {
+  const hostname = window.location.hostname;
+
+  if (
+    hostname === "takeontransplant.org" ||
+    hostname === "www.takeontransplant.org"
+  ) {
+    return 50;
   }
-  var u = "https://piwik.cirg.washington.edu/";
+
+  return null;
+}
+
+function addMatomoTracking() {
+  const siteID = getMatomoSiteId();
+
+  // Do not track localhost, or other unconfigured environments.
+  if (!siteID) {
+    return;
+  }
+
+  const u = "https://piwik.cirg.washington.edu/";
+
   _paq.push(["setTrackerUrl", u + "matomo.php"]);
   _paq.push(["setSiteId", siteID]);
-  var d = document,
-    g = d.createElement("script"),
-    s = d.getElementsByTagName("script")[0];
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  const d = document;
+  const g = d.createElement("script");
+  const s = d.getElementsByTagName("script")[0];
+
   g.type = "text/javascript";
   g.async = true;
   g.defer = true;
   g.src = u + "matomo.js";
-  s.parentNode.insertBefore(g, s);
 
-  // no script fallback for users with JavaScript disabled
-  const ns = document.createElement("noscript");
-  ns.innerHTML =
-    '<img src="https://piwik.cirg.washington.edu/matomo.php?idsite=' +
-    siteID +
-    '&amp;rec=1" style="border:0" alt="" />';
-  document.body.appendChild(ns);
+  s.parentNode.insertBefore(g, s);
 }
 
 function domReady(fn) {
